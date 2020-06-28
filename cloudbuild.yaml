@@ -6,5 +6,5 @@ steps:
   args: [-c, 'pip install -r requirements.txt', '&&', 'pylint main.py', '&&', 'pytest .']
   dir: '.'
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['functions', 'deploy', 'civ6-pbc', '--trigger-http', '--runtime', 'python37', '--entry-point', 'run_service']
+  args: ['functions', 'deploy', 'civ6-pbc','--allow-unauthenticated', '--trigger-http', '--runtime', 'python37', '--entry-point', 'run_service']
   dir: '.'
