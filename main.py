@@ -8,7 +8,7 @@ import requests
 
 def run_service(arg1=None, arg2=None): # pylint: disable=unused-argument
     """
-    entrypoint for cloud function execution
+    entrypoint for cloud function execution on http call
 
     Parameters
     ----------
